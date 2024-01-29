@@ -12,7 +12,7 @@ function longestPrix(longestPrixArr){
     let result = "";
     for (let n = 0; n < longestPrixArr[0].length; n++) {
         for (let k = 1; k < longestPrixArr.length; k++){
-            if(longestPrixArr[0].split('')[n] === longestPrixArr[k].split('')[n]){
+            if(longestPrixArr[0][n] === longestPrixArr[k][n]){
                 result = n;
             }else{
                 console.log(longestPrixArr[0].slice(0,n));
